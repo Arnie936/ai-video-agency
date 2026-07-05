@@ -73,3 +73,26 @@ Scene-writing rules:
 
 The hook must raise a question in the first 5 seconds (rumble → what's coming?).
 Payoff follows immediately in the same scene — don't defer it to scene 2.
+
+## Title / text transition cards (Seedance 2.0, text-to-video)
+
+Structure: silent empty opening → text flies in with ONE sound accent → silent hold/fade.
+
+```
+Cinematic title card on a near-black background with faint drifting embers and
+subtle smoke, matching a prehistoric fire theme. The first second is completely
+silent and empty. Then the title text 'DER FUNKE' flies in dynamically as glowing
+ember-orange letters, assembling from swirling sparks, accompanied by a single deep
+cinematic whoosh-impact sound exactly when the text lands. The text holds, gently
+flickering like firelight. The final second: total silence again, text slowly
+fading. No music, no other sounds — only the one whoosh-impact. Elegant, epic,
+minimalist title sequence, 16:9.
+```
+
+Why the silence bookends matter: the card sits between two story clips with their
+own audio — starting and ending in silence makes the hard cuts inaudible.
+
+Rules:
+- Put the exact title in quotes; keep it short (1–3 words render most reliably).
+- Match the particle/lighting motif to the film's theme.
+- Always verify the rendered spelling on a mid-clip frame before delivering.

@@ -148,13 +148,41 @@ higgsfield generate create seedance_2_0 \
   --start-image ./final_frame.png --end-image ./reference.png --duration 5 --wait
 ```
 
-## Step 7 — Assembly & delivery
+## Step 7 — Optional: title & text transition cards
+
+Once all story clips are done, ask the user once: **"Do you want any text
+transitions — a title card, an outro card, or a text overlay anywhere?"** Many
+videos benefit from a short film title; don't force it.
+
+Placement guidance (advise the user, don't just obey):
+- **Best spot for a title card**: right after the opening transformation, before
+  scene 1 — a natural chapter boundary that "opens" the film.
+- **Avoid cards in the mid-story transitions** (e.g. between struggle and triumph):
+  they break tension exactly where retention matters most.
+- **An outro card after the reverse morph** (title + creator name / call to action)
+  rounds off the film without interrupting the story.
+
+Generate cards as their own Seedance clips so their look matches the film. The
+sound design pattern that makes cuts feel clean: silence → one sound accent when
+the text lands → silence again.
+
+```bash
+higgsfield generate create seedance_2_0 \
+  --prompt "Cinematic title card on a near-black background with <theme-matching elements, e.g. faint drifting embers and subtle smoke>. The first second is completely silent and empty. Then the title text '<TITLE>' flies in dynamically as <style, e.g. glowing ember-orange letters assembling from swirling sparks>, accompanied by a single deep cinematic whoosh-impact sound exactly when the text lands. The text holds, gently flickering. The final second: total silence again, text slowly fading. No music, no other sounds — only the one whoosh-impact. Elegant, epic, minimalist title sequence, 16:9." \
+  --duration 5 --wait
+```
+
+Match the card's visual motif to the film's lighting theme (fire film → embers,
+sci-fi → neon particles, etc.). Verify the spelling of the rendered text by
+extracting a mid-clip frame — text is the most common generation failure.
+
+## Step 8 — Assembly & delivery
 
 Offer to concatenate everything with ffmpeg (re-encode; the clips may differ in
 resolution/bitrate):
 
 ```bash
-printf "file '01_morph_in.mp4'\nfile 'scene1.mp4'\nfile 'scene2.mp4'\nfile 'scene3.mp4'\nfile '05_morph_back.mp4'\n" > list.txt
+printf "file '01_morph_in.mp4'\nfile 'title_card.mp4'\nfile 'scene1.mp4'\nfile 'scene2.mp4'\nfile 'scene3.mp4'\nfile '05_morph_back.mp4'\n" > list.txt
 ffmpeg -f concat -safe 0 -i list.txt -c:v libx264 -crf 18 -preset slow -pix_fmt yuv420p final_video.mp4
 ```
 
