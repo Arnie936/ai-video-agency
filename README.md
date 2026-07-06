@@ -14,7 +14,7 @@ Du brauchst **kein technisches Vorwissen**. Öffne deinen Coding Agent (z.B.
 
 Der Agent erledigt den Rest: Er installiert alles, prüft was fehlt und führt
 dich Schritt für Schritt zum ersten Video. Einen Higgsfield-Account (die
-Video-KI dahinter) erstellst du hier: 👉 **https://higgsfield.ai/s/mcp-arnold-oberleiter-LylSbf**
+Video-KI dahinter) erstellst du hier: 👉 **https://higgsfield.ai/s/mcp-arnold-oberleiter-PGBQCb**
 
 ---
 
@@ -38,7 +38,7 @@ video.
 You (photo) ──morph──▶ Caveman ──▶ 3 cinematic story scenes ──morph──▶ You (photo)
 ```
 
-Built on [Higgsfield](https://higgsfield.ai/s/mcp-arnold-oberleiter-LylSbf)
+Built on [Higgsfield](https://higgsfield.ai/s/mcp-arnold-oberleiter-PGBQCb)
 (GPT Image 2 + Seedance 2.0) and battle-tested against the classic failure mode of
 multi-scene AI video: **identity drift**.
 
@@ -61,7 +61,7 @@ stories.
 ## 🚀 Setup
 
 1. **Get a Higgsfield account** (the generation backend):
-   👉 https://higgsfield.ai/s/mcp-arnold-oberleiter-LylSbf
+   👉 https://higgsfield.ai/s/mcp-arnold-oberleiter-PGBQCb
 
 2. **Install the Higgsfield CLI**:
    ```bash
