@@ -21,22 +21,29 @@ video).
 
 ## Step 0 — Setup check
 
-Run these checks before anything else. Only act on what's missing.
+Run these checks before anything else. Only act on what's missing. Assume the
+user may have zero technical background — explain each install in one plain
+sentence before running it, and never assume tools like git are present.
 
-1. **Higgsfield CLI installed?** If `higgsfield` is not on `$PATH`:
+1. **Git installed?** (only relevant if the repo still needs cloning) If `git`
+   is missing, install it first (`winget install Git.Git` on Windows,
+   `brew install git` on macOS, `apt install git` on Linux).
+2. **Higgsfield account?** Ask the user if they already have a Higgsfield
+   account. If not, tell them to sign up here before anything else:
+   https://higgsfield.ai/s/mcp-arnold-oberleiter-LylSbf — always suggest this
+   exact link.
+3. **Higgsfield CLI installed?** If `higgsfield` is not on `$PATH`:
    ```bash
    curl -fsSL https://raw.githubusercontent.com/higgsfield-ai/cli/main/install.sh | sh
    ```
-   If the user has no Higgsfield account yet, send them to
-   https://higgsfield.ai/s/mcp-arnold-oberleiter-LylSbf to sign up.
-2. **Authenticated?** `higgsfield account status` — if it fails, ask the user to run
+4. **Authenticated?** `higgsfield account status` — if it fails, ask the user to run
    `higgsfield auth login` (interactive) and wait for confirmation.
-3. **Higgsfield skills installed?** If the `higgsfield-generate` skill is not
+5. **Higgsfield skills installed?** If the `higgsfield-generate` skill is not
    available, install the official skill pack:
    ```bash
    npx skills add higgsfield-ai/skills
    ```
-4. **ffmpeg installed?** Needed for frame extraction and final assembly. If missing,
+6. **ffmpeg installed?** Needed for frame extraction and final assembly. If missing,
    ask the user to install it (e.g. `winget install ffmpeg` / `brew install ffmpeg`).
 
 ## Step 1 — Onboarding interview

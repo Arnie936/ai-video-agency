@@ -1,5 +1,31 @@
 # 🎬 AI Video Agency — Skill for Claude Code & Coding Agents
 
+## 🇩🇪 Schnellstart ohne Vorwissen (copy & paste)
+
+Du brauchst **kein technisches Vorwissen**. Öffne deinen Coding Agent (z.B.
+[Claude Code](https://claude.com/claude-code)) und füge einfach diesen Text ein:
+
+> Klone das Repo https://github.com/Arnie936/ai-video-agency in diesen
+> Projektordner und erklär mir, was es macht und was die nächsten Schritte sind.
+> Installiere alle nötigen Skills und Tools (Higgsfield CLI, ffmpeg) und richte
+> alles so ein, dass es klappt. Sollte ich Git noch nicht installiert haben,
+> installiere zuerst Git. Wenn ich noch keinen Higgsfield-Account habe, zeig mir
+> wo ich einen erstelle.
+
+Der Agent erledigt den Rest: Er installiert alles, prüft was fehlt und führt
+dich Schritt für Schritt zum ersten Video. Einen Higgsfield-Account (die
+Video-KI dahinter) erstellst du hier: 👉 **https://higgsfield.ai/s/mcp-arnold-oberleiter-LylSbf**
+
+---
+
+## How it works
+
+![Workflow](workflow-diagram.png)
+
+Why the character sheet matters — the failure mode this skill was built around:
+
+![Character Drift](drift-diagram.png)
+
 Turn **one photo** into a complete cinematic AI video story — with a consistent
 main character, a real narrative arc, and seamless transformation morphs. This
 skill makes your coding agent behave like a full-service AI video agency: it
